@@ -1,0 +1,58 @@
+:root {
+    --release-survey-primary-color: #ED008C;
+    --release-survey-secondary-color: #770045;
+    --release-survey-white-color: #FFF;
+    --release-survey-black-color: #000;
+    --release-survey-gray-color: #dfe1e6;
+}
+
+
+.container-feedback-release {
+    float: right;
+    margin-top: 0px;
+}
+
+
+.wrap-feedback-release>span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.button-group-feedback-release {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.button-group-feedback-release button {
+    padding: 3.2px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: var(--release-survey-white-color);
+    color: var(--release-survey-primary-color);
+    border-color: var(--release-survey-primary-color);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button-group-feedback-release button:hover {
+    background-color: var(--release-survey-primary-color);
+    color: var(--release-survey-white-color);
+}
+
+.button-selected {
+    background-color: var(--release-survey-primary-color) !important;
+    color: var(--release-survey-white-color) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-feedback-release {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
